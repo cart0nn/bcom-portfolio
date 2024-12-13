@@ -1,0 +1,49 @@
+---
+import Layout from "../components/layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import "../styles/tailwind.css";
+---
+<Layout title="Writing | Portfolio">
+    <Navbar />
+    <div class="text-4xl text-white font-bold text-center mt-8 mb-3">
+        Writing Samples
+    </div>
+
+    <div class="text-xl text-white text-center mx-24">
+        This will show the development of my writing through showcasing writing samples from the beginning versus the end of the semester.
+    </div>
+    <div class="text-3xl text-white font-bold text-center mt-3">
+        Beginning of Semester
+    </div>
+    <div class="flex flex-row justify-center space-x-8 mt-8 p-4">
+        <iframe
+            src="/elevator_pitch.pdf"
+            width="50%"
+            height="600px"
+            style="border:none;">
+        </iframe>
+        <iframe
+            src="/SOP.pdf"
+            width="50%"
+            height="600px"
+            style="border:none;">
+        </iframe>
+    </div>
+    <div class="text-3xl text-white font-bold text-center mt-3">
+        End of Semester
+    </div>
+    <div class="flex flex-row justify-center space-x-8 mt-8 p-4">
+        <iframe
+                src="/email.pdf"
+                width="50%"
+                height="600px"
+                style="border:none;">
+        </iframe>
+        <iframe
+                src="/position_paper.pdf"
+                width="50%"
+                height="600px"
+                style="border:none;">
+        </iframe>
+    </div>
+</Layout>

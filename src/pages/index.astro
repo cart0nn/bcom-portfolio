@@ -1,6 +1,38 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import '../styles/tailwind.css'
+import Layout from "../components/layouts/Layout.astro";
+import "../styles/tailwind.css";
 ---
+<Layout title="Professional Online Portfolio">
+    <div class="text-4xl text-white font-bold text-center mt-8">
+        Professional Online Portfolio
+    </div>
+    <div class="text-xl text-white italic text-center">
+        Carson Smith
+    </div>
+    <div class="text-xl text-white italic text-center mb-3">
+        BCOM 1300, Prof. Julie Stewart
+    </div>
 
-<Layout />
+    <div class="text-3xl text-white font-bold text-center mt-3">
+        About Me
+    </div>
+    <img src="/headshot.jpg" alt="headshot image" height="400" width="400" class="mx-auto mt-3 mb-5"></img>
+    <div class="text-xl text-white text-center italic mx-24 mb-5">
+        "Have you tried turning it off and on again?"
+    </div>
+    <div class="text-xl text-white text-center mx-24">
+        I'm Carson Smith, a first-year Computer Information Systems and Technology major at UT Dallas who's passionate for IT infrastructure—both Cloud and On-Prem—and DevOps. I'm driven by my belief that every organization, team, or individual uses technology, and it's on me to not only ensure it runs, but to ensure the technology advances the user. Despite being a first-year, I've leveraged IT skills and knowledge at UTD Comet Robotics as their Director of Facilities, and I've previously worked as a DevOps Engineer at CS_Squared, which is also a startup I founded.
+    </div>
+    <div class="text-3xl text-white font-bold text-center mt-3">
+        Contents
+    </div>
+    <div class="flex flex-col justify-center text-xl items-center space-y-1 mb-10">
+        <a href="/video" class="text-blue-300 hover:text-blue-500">Video</a>
+        <a href="/writing" class="text-blue-300 hover:text-blue-500">Writing</a>
+        <a href="/goals" class="text-blue-300 hover:text-blue-500">Goals</a>
+        <a href="/resume" class="text-blue-300 hover:text-blue-500">Resume</a>
+        <a href="/contact" class="text-blue-300 hover:text-blue-500">Contact</a>
+    </div>
+
+
+</Layout>

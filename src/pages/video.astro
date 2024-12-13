@@ -1,0 +1,20 @@
+---
+import Layout from '../components/layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import '../styles/tailwind.css';
+---
+
+<Layout title="Video | Portfolio">
+    <Navbar />
+    <div class="text-4xl text-white font-bold text-center mt-8 mb-3">
+        Video Sample
+    </div>
+
+    <div class="text-xl text-white text-center mx-24">
+        In this video, I read my About Me paragraph as an example of my speech.
+    </div>
+
+    <div class="flex flex-row justify-center p-4">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/J6Rl628Cqug?si=rZ1LyxOTovVM1u8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</Layout>
